@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4CAF50, #42A5F5); /* Similar gradient to your image */
+}
+
+.form-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;  /* Larger title */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-group input {
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    padding: 0.8rem;
+    border: none;
+    background-color:
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+</style>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <h2>GET IN TOUCH</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <input type="url" name="website" placeholder="Your Website">
+                <textarea name="message" rows="5" placeholder="Your message here..." required></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Call us on +001 345 6789</p>
+    </footer>
+
+</body>
+</html>
